@@ -1,0 +1,94 @@
+.header-container {
+  width: 100vw;
+}
+
+@media (max-width: 991px) {
+  .header-container {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 90%;
+    padding: 10x 30px 10px 30px;
+  }
+  .website-logo {
+    height: 100%;
+    width: 200px;
+  }
+  .logout-btn-mini {
+    height: 100%px;
+    width: 55px;
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .logout-img {
+    height: 100%;
+    width: 45px;
+  }
+  .mini-nav-list-container {
+    height: 70px;
+    width: 90%;
+    background-color: #e6f6ff;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 20px 0px 20px 0px;
+  }
+  .nav-image {
+    height: 35px;
+  }
+  .lg-nav-list-container {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .mini-nav-list-container {
+    display: none;
+  }
+  .logout-btn-mini {
+    display: none;
+  }
+  .header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .website-logo {
+    height: 50px;
+    width: 200px;
+  }
+  .lg-nav-list-container {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #64748b;
+  }
+  .lg-logout-btn {
+    height: 40px;
+    width: 100px;
+    background-color: #0b69ff;
+    border-style: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+  }
+}
